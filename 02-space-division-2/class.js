@@ -9,7 +9,7 @@ class Tile {
         this.col = color
     }
 
-    update(x, w, c) {
+    update(x, y, w, h, c) {
         this.x = x
         this.w = w
         this.col = c * 255
@@ -19,7 +19,7 @@ class Tile {
         stroke(0, 255, 0)
 
         noStroke()
-
+        // fill(255 - this.col)
         // rect(this.x,this.y,this.w,this.h)
         fill(this.col)
         ellipse(this.x,this.y,this.w,this.h)
