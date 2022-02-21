@@ -66,7 +66,7 @@ function draw() {
 
   let totY = 0
   for (let nX = 0; nX < tiles.length; nX++) {
-    totY += noise(nX, 1 * set.ampY, speed)
+    totY += noise(nX, nX * set.ampY, speed)
   }
 
   for (let x = 0; x < tiles.length; x++) {
@@ -79,7 +79,7 @@ function draw() {
     // isn't there a better way?
     let totX = 0
     for (let nY = 0; nY < tiles[x].length; nY++) {
-      totX += noise(x * set.ampX, nY, speed)
+      totX += noise(x * set.ampX, nY * set.ampY, speed)
     }
 
     for (let y = 0; y < tiles[x].length; y++) {
