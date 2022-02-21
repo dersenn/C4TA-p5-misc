@@ -16,7 +16,7 @@ function setup() {
 
 // p5 Draw
 function draw() {
-  background(255)
+  background(0)
 
 }
 
